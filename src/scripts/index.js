@@ -1,8 +1,6 @@
 import "regenerator-runtime";
-import "../styles/main.scss";
-import "../styles/responsive.scss";
-
-// import home from "../component/home.js";
+import "../styles/main.css";
+import "../styles/responsive.css";
 
 import restoData from "../public/data/DATA.json";
 
@@ -32,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".card__list").innerHTML = restaurantList;
 
   const menu = document.querySelector("#menu");
+  const drawer = document.querySelector("#drawer");
   const hero = document.querySelector(".hero");
   const main = document.querySelector("main");
-  const drawer = document.querySelector("#drawer");
 
   menu.addEventListener("click", function (event) {
     drawer.classList.toggle("open");
@@ -49,3 +47,5 @@ document.addEventListener("DOMContentLoaded", () => {
     drawer.classList.remove("open");
   });
 });
+
+console.log("coders hehe");
